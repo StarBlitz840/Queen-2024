@@ -8,12 +8,17 @@ hub = PrimeHub()
 
 
 wheel_left = Motor(Port.C, Direction.COUNTERCLOCKWISE)
-wheel_right = Motor(Port.D)
+wheel_left = Motor(Port.D)
 arm_left = Motor(Port.E)
-arm_right = Motor(Port.A)
-Sensor_right = ColorSensor(Port.F)
+arm_right = Motor(Port.B)
+Sensor_left = ColorSensor(Port.F)
+Sensor_right = ColorSensor(Port.A)
+
 chassis = DriveBase(wheel_left, wheel_right,62.4, 80)
 chassis.use_gyro(True)
+
+wheel_left.run_time(700, 2000)
+
 def run_1():
     chassis.straight(200)
     arm_right.run_angle(700, 360)
@@ -36,5 +41,4 @@ elif selected == "3":
     run_3()
 elif selected == "4":
     run_4()
-
 
