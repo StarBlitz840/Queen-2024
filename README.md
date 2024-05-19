@@ -1,6 +1,6 @@
-# StarBlitz #840 Robot 2023-2024
+# StarBlitz #840 Off-season robot 2023-2024
 
-This repository used for store code, managing versions and allow contributing together for the FLL masterpiece robot challenge
+This repository used for store code, managing versions and allow contributing together for the FLL off season masterpiece robot challenge
 
 ## Structure 
 
